@@ -1,53 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    <title>DD-interior</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body >  
-    <div class="bg-img">
-      <nav class="navbar flex-center">
-        <div class="left-nav">
-          <img src="assets/Images/UrbanOak.svg" alt="DD-interior-logo" />
-        </div>
-        <ul class="center-nav flex-center">
-          <li>HOME</li>
-          <li>PROJECTS</li>
-          <li>GELLERY</li>
-          <li>ABOUT US</li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DD Interiors</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- <link rel="stylesheet" href="./form.css" /> -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="container">
+      <h1 class="title">DD Interiors</h1>
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="#hero">Home</a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#services">Services</a></li>
+          <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a href="#team">Team</a></li>
+          <li class="nav-item"><a href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
         </ul>
-        <div class="nav-right flex-center">
-          <button class="secoundry-btn">Contact with Us </button>
-          <ion-icon class="ion-icon" name="arrow-forward-circle"></ion-icon>
+        <div class="burger">
+          <img src="assets/Gallery Image/burger-bar.png" alt="menu-burger" srcset="">
         </div>
       </nav>
-
-      <section class="hero-section">
-        <div class="hero-text flex-center">
-          <h1 class="title text-center">
-            Crafting Timeless Interiors with Modern Elegance
-          </h1>
-          <p class="sub-title text-center">
-            Blending contemporary style with classic comfort,<br>We create spaces
-            that inspire and endure.
-          </p>
-          <button class="explore-btn">
-            EXPLORE MORE
-            <ion-icon class="ion-icon" name="arrow-forward-circle"></ion-icon>
-          </button>
-        </div>
-      </section>
     </div>
-  </body>
-  <script src="script.js"></script>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <img class="hero-img" src="./assets/dublicate.png" alt="">
+    <div class="hero-content">
+      <h2>Modern Spaces, Timeless Designs</h2>
+      <p>
+        Experience the art of interior transformation with DD Interiors. Your
+        dream space awaits.
+      </p>
+      <a href="#contact" class="btn">Book Your Consultation</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 class="line">About Us</h2>
+      <p>
+        At DD Interiors, we specialize in delivering creative, personalized solutions that transform your home and
+        workspace
+        into spaces that truly reflect your style and needs. Whether you're looking to revamp a single room or redesign
+        an
+        entire property, we are committed to crafting spaces that blend beauty, functionality, and sustainability.
+      <p>
+        Our approach starts with understanding your unique vision, lifestyle, and preferences. We work closely with you
+        every
+        step of the way to ensure that each detail aligns with your goals, creating interiors that are not only visually
+        stunning but also optimized for everyday living and working. From the selection of materials to the layout of
+        furniture,
+        every decision is made with care and purpose.
+      </p>
+
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <h2 class="line">Our Services</h2>
+      <div class="service-cards">
+        <div class="card">
+          <img class="card-icon" src="./assets/interior-design_4635409.svg" max-width="10px" alt="">
+          <h3>Residential Design</h3>
+          <p>Crafting homes that reflect your personal style and comfort.</p>
+        </div>
+        <div class="card">
+          <img class="card-icon" src="./assets/stationery-shop_17529640.svg" max-width="10px" alt="">
+
+          <h3>Commercial Design</h3>
+          <p>Innovative designs to make your business stand out.</p>
+        </div>
+        <div class="card">
+          <img class="card-icon" src="./assets/armchair_18077794.svg" max-width="10px" alt="">
+
+          <h3>Custom Furniture</h3>
+          <p>Unique furniture tailored to match your interior vision.</p>
+        </div>
+        <div class="card">
+          <img class="card-icon" src="./assets/triangle_1050456.svg" max-width="10px" alt="">
+          <h3>Space Optimization</h3>
+          <p>Maximizing every square foot with smart solutions.</p>
+        </div>
+        <div class="card">
+          <img class="card-icon" src="./assets/key_9678736.svg" max-width="10px" alt="">
+
+          <h3>Turnkey Solutions</h3>
+          <p>Comprehensive interior design services from concept to completion, tailored to your needs.</p>
+        </div>
+        <div class="card">
+          <img class="card-icon" src="./assets/quote_8284100.svg" max-width="10px" alt="">
+
+          <h3>Quotation of Interiors</h3>
+          <p>Accurate and transparent quotes for all your interior design needs, tailored to your project scope.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="container">
+      <h2 class="line">Our Portfolio</h2>
+      <div class="portfolio-gallery">
+        <!-- <img src="assests/images/project1.jpeg" alt="Elegant Living Room" />
+        <img src="assests/images/project11.jpeg" alt="Modern Office Design" />
+        <img src="assests/images/project2.jpeg" alt="Contemporary Kitchen" />
+        <img src="assests/images/project10.jpeg" alt="Luxury Bedroom" />
+        <img src="assests/images/project13.jpeg" alt="Luxury Bedroom" />
+        <img src="assests/images/project14.jpeg" alt="Luxury Bedroom" />
+        <img src="assests/images/project17.jpeg" alt="Luxury Bedroom" /> -->
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="swiper-img" src="./assets/Gallery Image/entrance room.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="./assets/Gallery Image/Dinning.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="./assets/Gallery Image/Living-TV-Room.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="./assets/Gallery Image/kitchen.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="./assets/Gallery Image/gust-room.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="./assets/Gallery Image/sister-room.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="./assets/Gallery Image/Son room.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="./assets/Gallery Image/master room.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="./assets/Gallery Image/seeling.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="./assets/Gallery Image/glamour-studio.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="./assets/Gallery Image/glamour-innerspace.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-img" src="./assets/Gallery Image/glamour-nails-storage.webp" alt="">
+            </div>
+          </div>
+          <div class="swiper-button-next swiper-buttons "></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team">
+    <div class="container">
+      <h2 class="line">Our Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="./assets/yogesh.webp" alt="Yogesh Dabade" />
+          <h3>Yogesh Dabade</h3>
+          <p>Founder & Creative Director</p>
+        </div>
+        <!-- <div class="team-member">
+            <img src="assests/images/project16.jpeg" alt="Chetan Dabhade" />
+            <h3>Chetan Dabhade</h3>
+            <p>Co-Founder & Design Lead</p>
+          </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <div class="container">
+      <h2 class="line">What Our Clients Say</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <p>
+            "DD Interiors transformed our office into a modern workspace that
+            inspires creativity every day!"
+          </p>
+          <p><strong>- Priya Sharma</strong></p>
+        </div>
+        <div class="testimonial">
+          <p>
+            "The team perfectly captured my vision for my living room. Highly
+            recommend their services!"
+          </p>
+          <p><strong>- Rahul Mehta</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container ">
+      <h2 class="line">Contact Us</h2>
+      <form action="https://formspree.io/f/xdkkqdek" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <!-- POPUP  -->
+
+  <section id="popup">
+    <div class="container">
+      <div class="form-header">
+        <h2>Contact Us</h2>
+        <span id="closeButton">&times;</span>
+      </div>
+      <!-- <form action="https://formspree.io/f/xdkkqdek" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit" type="submit">Send Message</button>
+      </form> -->
+      <form action="https://formspree.io/f/xdkkqdek" class="fs-form" target="_top" method="POST">
+        <div class="fs-field">
+          <label class="fs-label" for="name">Your Name</label>
+          <input class="fs-input" id="name" name="name" required />
+        </div>
+        <div class="fs-field">
+          <label class="fs-label" for="email">Email</label>
+          <input class="fs-input" id="email" name="email" required />
+          <p class="fs-description">
+            This will help me respond to your query via an email.
+          </p>
+        </div>
+        <div class="fs-field">
+          <label class="fs-label" for="message">Message</label>
+          <textarea class="fs-textarea" id="message" name="message" required></textarea>
+          <p class="fs-description">What would you like to discuss?</p>
+        </div>
+        <div class="fs-button-group">
+          <button class="fs-button" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 DD Interiors | dreamdesire00@gmail.com</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module">
+    // import swiper from 'https://cdn.jsdelivr.net/npm/swiper@11.2.0/+esm'
+
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        loop: true,
+        autoplay: {
+          delay: 2500,  // Time between slide transitions in milliseconds (2.5 seconds)
+          disableOnInteraction: false,  // Keep autoplay running even after user interaction
+        },
+      }
+    });
+
+    // </script>
+  <script defer src="script.js"></script>
+</body>
+
 </html>
